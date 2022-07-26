@@ -1,8 +1,10 @@
 body {
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     background-image: url(images/pattern-background-desktop.svg);
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .container {
@@ -19,11 +21,18 @@ body {
 
 #hero {
     max-width: 100%;
+
 }
 
 h1 {
     font-size: 22px;
     color: hsl(223, 47%, 23%);
+}
+
+h2 {
+    font-size: 14px;
+    color: hsl(223, 47%, 23%);
+    margin: 0;
 }
 
 .text-content {
@@ -35,37 +44,34 @@ h1 {
     border-radius: 10px;
     margin: 20px 0;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .choice-lhs {
-    max-width: 100%;
-    max-heihgt: 100%;
-    display: inline;
+    display: flex;
+    align-items: center;
+
 }
 
 .choice-lhs img {
-    max-width: 100%;
-    max-height: 100%;
+    width: auto;
     padding: 0;
     margin: 0;
 }
 
 .plan-container {
-    display: inline;
-    background-color: red;
-    padding: 0px;
-    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
     margin-left: 10px;
 }
 
 .plan-container p {
-    margin-left: 10px;
-    display: inline;
-    max-width: auto;
+    margin: 0;
 }
 
-.change {
-    display: inline;
+.choice-rhs {
+    text-align: right;
 }
 
 .payment-btn {
