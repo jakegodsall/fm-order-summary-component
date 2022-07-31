@@ -2,9 +2,12 @@ body {
     font-family: 'Red Hat Display', sans-serif;
     font-size: 14px;
     text-align: center;
-    background-image: url(images/pattern-background-desktop.svg);
-    background-size: cover;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 50vh;
     min-height: 100vh;
+    background-color: hsl(225, 100%, 94%);
 }
 
 .container {
@@ -21,7 +24,7 @@ body {
 
 #hero {
     max-width: 100%;
-
+    border: none;
 }
 
 h1 {
@@ -29,14 +32,13 @@ h1 {
     color: hsl(223, 47%, 23%);
 }
 
-h2 {
-    font-size: 14px;
-    color: hsl(223, 47%, 23%);
-    margin: 0;
-}
-
 .text-content {
     margin: 30px;
+    border: none;
+}
+
+.text-content p {
+    color: hsl(224, 23%, 55%);
 }
 
 .choice {
@@ -46,6 +48,7 @@ h2 {
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .choice-lhs {
@@ -66,8 +69,14 @@ h2 {
     margin-left: 10px;
 }
 
+.plan-container h2 {
+    font-size: 14px;
+    color: hsl(223, 47%, 23%);
+    margin: 2px;
+}
+
 .plan-container p {
-    margin: 0;
+    margin: 2px;
 }
 
 .choice-rhs {
@@ -76,12 +85,25 @@ h2 {
 
 .payment-btn {
     color: white;
+    font-weight: bold;
     background-color: hsl(245, 75%, 52%);
     border-radius: 10px;
     padding: 10px 0 10px 0;
+    box-shadow: 0 10px 75px hsl(224, 23%, 55%);
+    transition: border-color 0.5s;
+    cursor: pointer;
+
+}
+
+.payment-btn:hover {
+    transform: translateY(-0.25em);
+    background-color: hsla(245, 75%, 52%, 0.342);
 }
 
 
 .cancel {
     color: hsl(224, 23%, 55%);
+    font-weight: bold;
+    cursor: pointer;
+
 }
