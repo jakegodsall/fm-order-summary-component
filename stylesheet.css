@@ -90,7 +90,6 @@ h1 {
     border-radius: 10px;
     padding: 10px 0 10px 0;
     box-shadow: 0 10px 75px hsl(224, 23%, 55%);
-    transition: border-color 0.5s;
     cursor: pointer;
 
 }
@@ -106,4 +105,15 @@ h1 {
     font-weight: bold;
     cursor: pointer;
 
+}
+
+@media screen and (min-width: 400px) {
+
+    body {
+        background-image: url('images/pattern-background-desktop.svg')
+    }
+
+    .container {
+        width: 350px;
+    }
 }
