@@ -8,6 +8,9 @@ body {
     background-size: 100% 50vh;
     min-height: 100vh;
     background-color: hsl(225, 100%, 94%);
+
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .container {
